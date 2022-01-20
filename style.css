@@ -2,13 +2,12 @@
  body {
   line-height:1;
   margin:0;
+  font-family: 'Raleway';
 }
 
 nav, header, footer {
   display : block; 
 }
-
-/* css grid system */
 
 /* css grid system */
 .container {
@@ -43,7 +42,7 @@ nav, header, footer {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-/* navbar */
+/* navigation bar */
 
 nav {
   background: none;
@@ -60,23 +59,23 @@ nav ul{
  }
 
  nav ul li {
-   display: inline-block;
+  display: inline-block;
   list-style: none;
+  font-size: 1.2rem;
 }
 
 nav ul li a {
   display:block;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
   text-align : center;
+  font-weight: 600;
   padding:14px;
   border-radius: 24px;
   text-transform: uppercase;
   color : #F26031;
 }
 
-a:hover {
+nav ul li a:hover {
   background-color: #12C757;
   color :white;
 }
@@ -86,13 +85,12 @@ li.dropdownIcon {
 }
 
 
-/* landing text  */
+/* landing page   */
 
 
 .main-text {
   text-align: center;
   position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -108,16 +106,23 @@ li.dropdownIcon {
   font-size: 1.2rem;
 }
 
+div.main-text .btn {
+  font-size: 1.4rem;
+}
+
 
 .btn {
   background-color: #F26031;
   color: white;
-  font-size: 16px;
   padding: 8px 36px;
   margin: 16px;
   border: none;
   cursor: pointer;
   border-radius: 24px;
+}
+
+.btn:hover {
+  background-color :#12C757;
 }
 
 /* homepage */
@@ -144,42 +149,57 @@ li.dropdownIcon {
     padding : 5% 7% 5%;
   }
 
-  .dish-text {
-    font-family: Arial, Helvetica, sans-serif;
+  .dish-text{
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
+  .dish-text h1  {
+    font-size: 1.5rem;
+    margin-top : .05rem;
+    margin-bottom: 0.5rem;
+  }
   .dish-text h2 {
+    font-size: 1.2rem;
+    margin-top : .05rem;
+    margin-bottom: 0.5rem;
     font-weight: 500;
   }
+  .dish-text p{
+    font-size: 1rem;
+    margin-top : .05rem;
+    margin-bottom: 0.5rem;
+  }
 
-  /* healthy-evening section  */
+  /* healthy-evening and ice cream section */
 
-  .healthy-evening-text {
+  .healthy-evening-text , .ice-cream-text {
     padding : 0% 10% 0%;
-    font-family: Arial, Helvetica, sans-serif;
     
   }
 
-  .healthy-evening-text h1 {
+  .healthy-evening-text h1 , .ice-cream-text h1 {
     font-size: 4rem;
     margin-top :1rem;
     margin-bottom: 1rem;
   }
 
-  .healthy-evening-text p {
+  .healthy-evening-text p , .ice-cream-text p {
     font-size: 1.5rem;
     margin-top :1rem;
     margin-bottom: 1rem;
   }
 
 
-  .healthy-evening-text .btn {
+  .healthy-evening-text .btn, .ice-cream-text .btn {
     margin:  0;
     margin-top :1rem;
     margin-bottom: 1rem;
+    font-size: 2rem;
+    border-radius: 3rem;
   }
 
-  .healthy-evening-img img {
+  .healthy-evening-img img , .ice-cream-img img {
       display: block;
       width: 100%;
       height:auto;
@@ -190,7 +210,6 @@ li.dropdownIcon {
 
   .learn-cooking-text {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 0 7% 0;
   }
 
@@ -201,34 +220,6 @@ li.dropdownIcon {
   .learn-cooking-text p {
     font-size: 1.5rem;
   }
-
-
-  /* discount section */
-
-.discount-text {
-  padding : 5% 10% 5%;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-.discount-text h1 {
-  font-size: 4rem;
-  margin-top :1rem;
-  margin-bottom: 1rem;
-}
-
-.discount-text p {
-  font-size: 1.5rem;
-  margin-top :1rem;
-  margin-bottom: 1rem;
-}
-
-.discount-text .btn {
-  margin:  0;
-  margin-top :1rem;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
 
 
 /* learn cooking */
@@ -250,11 +241,11 @@ li.dropdownIcon {
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
+    padding: 1rem;
     color: #ffffff;
     background-color: #F26031;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2rem;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -336,6 +327,35 @@ li.dropdownIcon {
   }
 
 
+  /* discount and ice cream section */
+    /* discount section */
+
+.discount-text {
+  padding : 5% 10% 5%;
+  text-align: center;
+}
+
+.discount-text h1 {
+  font-size: 4rem;
+  margin-top :1rem;
+  margin-bottom: 1rem;
+}
+
+.discount-text p {
+  font-size: 1.5rem;
+  margin-top :1rem;
+  margin-bottom: 1rem;
+}
+
+.discount-text .btn {
+  margin:  0;
+  margin-top :1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  border-radius: 3rem;
+}
+
+
 
   /* footer section */
 
@@ -363,8 +383,8 @@ footer.footerinfo p {
 }
 
 input[type = "text"] {
-  font-size : 1.3 rem;
-  width : 350px;
+  font-size : 1.3rem;
+  width : 500px;
   min-width: 100px;
   padding : 5px;
   border-radius: 7px;
@@ -378,7 +398,9 @@ footer.footerinfo .btn {
   border-radius: 30px;
 }
 
-
+footer.footerinfo .btn:hover {
+background-color: #0d8a3d;
+}
 
 
 
@@ -389,14 +411,6 @@ footer.footerinfo .btn {
 
 
   /* navbar */
-
-
-  img.logo {
-    width : 150px;
-    padding : 14px;
-    padding-left: 50px;
-  
-  }
 
   ul li:not(:nth-child(6)) {
     display: none;
@@ -446,6 +460,104 @@ footer.footerinfo .btn {
       margin : 0;
     }
 
+    /* landing page */
+
+    .main-text h1 {
+      font-size: 2rem;
+    }
+    
+    .main-text p {
+      font-size: 1rem;
+    }
+
+    div.main-text .btn {
+      font-size: 1rem;
+    }
+
+    /* dish page */
+
+    .dish-text h1  {
+      font-size: 1.2rem;
+      margin-top : .05rem;
+      margin-bottom: 0.5rem;
+    }
+    .dish-text h2 {
+      font-size: 1rem;
+      margin-top : .05rem;
+      margin-bottom: 0.5rem;
+    }
+    .dish-text p{
+      font-size: 0.9rem;
+      margin-top : .05rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* healthy evening and ice cream section */
+
+    .healthy-evening-text h1 , .ice-cream-text h1 {
+      font-size: 2.3rem;
+    }
+  
+    .healthy-evening-text p , .ice-cream-text p {
+      font-size: 1rem;
+    }
+  
+  
+    .healthy-evening-text .btn, .ice-cream-text .btn {
+      margin:  0;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    /* learn coking section */
+    .learn-cooking-text h1 {
+      font-size: 2.3rem;
+    }
+  
+    .learn-cooking-text p {
+      font-size: 1rem;
+    }
+
+      /* Next & previous buttons */
+  .prev, .next {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  /* discount section */
+  .discount-text h1 {
+    font-size: 2.3rem;
+  }
+  
+  .discount-text p {
+    font-size: 1rem;
+  }
+  
+  .discount-text .btn {
+    font-size: 1.5rem;
+  }
+      
+
+
+    /* footer */
+
+
+    footer.footerinfo h1 {
+      font-size: 2.3rem;
+    }
+    
+    footer.footerinfo p {
+      font-size: 1rem;
+    }
+  
+    footer.footerinfo .btn {
+      font-size: 1.5rem;
+    }
+
+    input[type = "text"] {
+      width : 250px;
+    }
+    
     }
 
 
