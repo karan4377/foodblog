@@ -430,6 +430,10 @@ background-color: #0d8a3d;
     float : none;
   }
 
+  nav ul li {
+    font-size: 0.8rem;
+  }
+
   ul.responsive li.dropdownIcon {
     position: fixed;
     margin: 0;
