@@ -320,7 +320,6 @@ div.main-text .btn {
   }
 
   .learn-cooking-img h2 {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     margin: 0;
     margin-top: 1rem;
@@ -520,6 +519,10 @@ background-color: #0d8a3d;
   
     .learn-cooking-text p {
       font-size: 1rem;
+    }
+
+    .learn-cooking-img h2 {
+      font-size: 0.8rem;
     }
 
       /* Next & previous buttons */
