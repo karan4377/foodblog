@@ -417,7 +417,8 @@ background-color: #0d8a3d;
 
   ul li.dropdownIcon {
     display : block;
-    padding-right: 30px;
+    padding-right: 15px;
+    font-size: 1rem;
   }
 
   nav ul {
@@ -439,7 +440,7 @@ background-color: #0d8a3d;
     top : 0;
     right : 0;
     padding : 10px;
-    padding-right: 40px;
+    padding-right: 25px;
   }
 
    ul.responsive  {
